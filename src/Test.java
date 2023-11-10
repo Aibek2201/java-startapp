@@ -3,6 +3,7 @@ public class Test {
         long a = 10;
         int b;
         b = 15;
+        a = b;
         System.out.println(b%a);
     }
 }
