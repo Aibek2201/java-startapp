@@ -1,6 +1,6 @@
 public class Days {
     public static void main(String[] args) {
-        int seconds = 86400;
+        int seconds = 87831;
         int days = seconds / 86400;
         seconds %= 86400;
         int hours = seconds / 3600;
