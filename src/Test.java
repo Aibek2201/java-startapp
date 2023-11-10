@@ -5,5 +5,6 @@ public class Test {
         b = 15;
         a = b;
         System.out.println(b%a);
+
     }
 }
