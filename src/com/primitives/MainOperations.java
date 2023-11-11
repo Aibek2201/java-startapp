@@ -9,12 +9,21 @@ public class MainOperations {
         float floatVal = 5.2f;
         double doubleVal = 6.3;
 
-        int result1 = shortVal + intVal;
-        long result2 = longVal + intVal;
-        double result3 = intVal + doubleVal;
+        sumOfIntAndDouble(intVal, doubleVal);
+        sumOfLongAndInt(longVal, intVal);
+        sumOfShortAndInt(shortVal, intVal);
 
-        System.out.println(result1);
-        System.out.println(result2);
-        System.out.println(result3);
+    }
+
+    public static void sumOfShortAndInt(short shortVal, int intVal) {
+        System.out.println(shortVal + intVal);
+    }
+
+    public static void sumOfLongAndInt(long longVal, int intVal) {
+        System.out.println(longVal + intVal);
+    }
+
+    public static void sumOfIntAndDouble(int intVal, double doubleVal) {
+        System.out.println(intVal + doubleVal);
     }
 }
