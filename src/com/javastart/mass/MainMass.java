@@ -12,11 +12,25 @@ public class MainMass {
 
         }
         printMass(mass);
+        caseEx(9);
+    }
 
+    public static void caseEx(int dayNumber) {
+        switch (dayNumber) {
+            case 1:
+                System.out.println("One");
+                break;
+            case 2:
+                System.out.println("Two");
+                break;
+            default:
+                System.out.println("Another");
+                break;
+        }
     }
     public static void printMass(int[] mass) {
-        for (int i = 0; i < mass.length; i++) {
-            System.out.println("index: " + i + "value" + mass[i]);
+        for (int el : mass) {
+            System.out.println("Value: " + el);
         }
      }
 }
