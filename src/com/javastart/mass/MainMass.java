@@ -28,6 +28,7 @@ public class MainMass {
                 break;
         }
     }
+
     public static void printMass(int[] mass) {
         for (int el : mass) {
             System.out.println("Value: " + el);
