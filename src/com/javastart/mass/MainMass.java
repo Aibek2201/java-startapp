@@ -9,7 +9,6 @@ public class MainMass {
 
         for (int i = 0; i < 5; i++ ) {
             mass[i] = input.nextInt();
-
         }
         printMass(mass);
         caseEx(9);
