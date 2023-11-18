@@ -22,6 +22,9 @@ public class MainMass {
             case 2:
                 System.out.println("Two");
                 break;
+            case 3:
+                System.out.println("Three");
+                break;
             default:
                 System.out.println("Another");
                 break;
