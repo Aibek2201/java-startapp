@@ -2,6 +2,7 @@ package com.javastart.mass;
 
 import java.util.Scanner;
 
+
 public class MainMass {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
