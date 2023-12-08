@@ -9,5 +9,9 @@ public class Main {
         Cat sulCat = new Cat();
         sulCat.setName("Sulu");
         sulCat.setWeight(2);
+
+        FightClub fightclub = new FightClub();
+        String catWinner = fightclub.fight(manuCat, sulCat);
+        System.out.println("Winner : " + catWinner);
     }
 }

@@ -2,6 +2,10 @@ package com.javastart.fightclub;
 
 public class FightClub {
     public String fight(Cat firstCat, Cat secondCat){
-        return null;
+        if (firstCat.getWeight() > secondCat.getWeight()) {
+            return firstCat.getName();
+        } else {
+            return secondCat.getName();
+        }
     }
 }
