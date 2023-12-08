@@ -11,7 +11,8 @@ public class Main {
         sulCat.setWeight(2);
 
         FightClub fightclub = new FightClub();
-        String catWinner = fightclub.fight(manuCat, sulCat);
-        System.out.println("Winner : " + catWinner);
+        System.out.println("Winner: " + fightclub.fight(manuCat, sulCat));
+        sulCat.setWeight(5);
+        System.out.println("Winner: " + fightclub.fight(manuCat, sulCat));
     }
 }
