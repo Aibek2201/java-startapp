@@ -11,7 +11,7 @@ public class PaymentService {
             System.out.println("Платеж невозможен, недостаточно средств");
         } else {
             int currentBillAmount = bill.getAmount();
-            System.out.println("Платеж обрабатывается, текущее состояние счета: " + currentBillAmount);
+            System.out.println("Платеж обрабатывается, текущее состояние счета: " + currentBillAmount  + " для клиента " + account.getAccountHolder().getName());
             bill.setAmount(currentBillAmount - amount);
             System.out.println("Платеж выполнен, новое состояние счета: " + bill.getAmount());
         }

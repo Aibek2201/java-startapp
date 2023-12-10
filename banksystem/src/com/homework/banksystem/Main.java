@@ -3,6 +3,7 @@ package com.homework.banksystem;
 import com.homework.banksystem.entity.Account;
 import com.homework.banksystem.entity.Bill;
 import com.homework.banksystem.entity.Person;
+import com.homework.banksystem.service.PaymentService;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,5 +16,8 @@ public class Main {
         Bill martinBill = new Bill(8000);
         Account martinAccount = new Account(martinPerson, martinBill);
 
+        PaymentService paymentService = new PaymentService();
+        paymentService.pay(loriAccount, 1000);
+        paymentService.pay(martinAccount, 1500);
     }
 }
