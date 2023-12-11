@@ -28,5 +28,6 @@ public class Main {
         System.out.println("\n");
         TransferService transferService = new TransferService();
         transferService.transfer(loriAccount, martinAccount, 15000);
+
     }
 }
