@@ -5,6 +5,7 @@ import com.homework.banksystem.entity.Bill;
 import com.homework.banksystem.entity.Person;
 import com.homework.banksystem.service.DepositService;
 import com.homework.banksystem.service.PaymentService;
+import com.homework.banksystem.service.TransferService;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,5 +25,8 @@ public class Main {
         DepositService depositService = new DepositService();
         depositService.deposit(loriAccount, 3000);
         depositService.deposit(martinAccount, 5000);
+        System.out.println("\n");
+        TransferService transferService = new TransferService();
+        transferService.transfer(loriAccount, martinAccount, 15000);
     }
 }
