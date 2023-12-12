@@ -11,6 +11,5 @@ public class Main {
 
         SayCatService.sayMeow();
         System.out.println(SayCatService.hello);
-
     }
 }
