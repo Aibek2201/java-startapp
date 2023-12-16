@@ -17,4 +17,21 @@ public class British extends Cat {
     public String toString() {
         return "Cat name: " + name + " Age: " + getAge() + " Owner: " + getOwner();
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null) {
+            return false;
+        }
+        if (getClass() == o.getClass()) {
+            British outsideBritish = (British) o;
+            return name.equals(outsideBritish.getName())
+                    && getAge() == outsideBritish.getAge()
+                    && getOwner().equals(outsideBritish.getOwner());
+        }
+        return false;
+    }
 }

@@ -14,5 +14,11 @@ public class Main {
 
         System.out.println(catScottish.toString());
         System.out.println(catBritish.toString());
+
+        British firstCat = new British(4, "Manu", "Ala");
+        British secondCat = new British(4, "Manu", "Ala");
+
+        System.out.println(firstCat == secondCat);
+        System.out.println(firstCat.equals(secondCat));
     }
 }
