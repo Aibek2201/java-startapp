@@ -6,6 +6,7 @@ public class Cat implements Animal{
 
     private int age;
 
+    @Override
     public void say() {
         System.out.println("Meow");
     }
