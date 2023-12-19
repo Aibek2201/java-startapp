@@ -5,6 +5,10 @@ public class Dog implements Animal{
 
     private int age;
 
+    public String getAnimalType() {
+        return "Dog";
+    }
+
     @Override
     public void say() {
         System.out.println("Woof");

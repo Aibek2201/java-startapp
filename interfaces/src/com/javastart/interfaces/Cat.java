@@ -6,6 +6,10 @@ public class Cat implements Animal{
 
     private int age;
 
+    public String getAnimalType() {
+        return "Cat";
+    }
+
     @Override
     public void say() {
         System.out.println("Meow");
